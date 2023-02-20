@@ -1,0 +1,75 @@
+#goyle {
+  max-width: 200px;
+}
+
+.script-container {
+  display: flex;
+}
+
+.script-box {
+  width: 100%;
+}
+
+.script {
+  position: absolute;
+  z-index: 1;
+  font-size: 20pt;
+  padding: 1rem;
+}
+
+.script-bg {
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
+  opacity: 60%;
+}
+
+#dungeon {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  opacity: 80%;
+  z-index: -1;
+}
+
+.title {
+  font-size: 32pt;
+  padding: 2rem;
+}
+
+.textbox-sm {
+  font-size: 16pt;
+  padding: 2rem;
+}
+
+.absolute-container {
+  position: absolute;
+  height: 100vh;
+}
+
+.game-img-container {
+  max-width: 300px;
+}
+
+#fluffy {
+  width: 100%;
+}
+
+#main-container {
+  height: 100%;
+}
+
+.btn-container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+#enter-btn {
+  width: 300px;
+  height: 100px;
+  font-size: 20pt;
+  background-color: brown;
+}
