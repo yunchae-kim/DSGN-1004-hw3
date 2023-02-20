@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/normalize.css" />
     <link rel="stylesheet" href="/styles/main.css" />
+    <script type="text/javascript" src="scripts/scripts.js"></script>
     <title>Goyle's Journey</title>
   </head>
   <body>
@@ -25,10 +26,11 @@
             </div>
             <div class="game-container">
               <div class="game-img-container">
-                <div class="btn-container">
-                  <a href="p1.html">
-                    <button id="enter-btn">Alohomora!</button>
-                  </a>
+                <div class="btn-container-1">
+                  <audio id="sound" src="/assets/alohomora.mp3"></audio>
+                  <button id="enter-btn" onclick="playAudio()">
+                    Alohomora!
+                  </button>
                 </div>
               </div>
             </div>

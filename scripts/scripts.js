@@ -1,6 +1,20 @@
-var counter = 1;
+// function playAudio(url, page) {
+//   var sound = new Audio(url).play();
+//   sound.addEventListener('ended', function () {
+//     location.href = page;
+//     return false;
+//   });
+// }
 
-const switchPage = (id) => {
-  const doc = document.getElementById(id);
-  doc.style.display = 'none';
-};
+// function playAudio(url, page) {
+//   new Audio(url).play();
+// }
+
+function playAudio() {
+  var sound = document.getElementById('sound');
+  sound.play();
+  sound.addEventListener('ended', function () {
+    location.href = 'p1.html';
+    return false;
+  });
+}

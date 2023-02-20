@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/normalize.css" />
     <link rel="stylesheet" href="/styles/main.css" />
+    <script type="text/javascript" src="scripts/scripts.js"></script>
     <title>Goyle's Journey</title>
   </head>
   <body>
@@ -15,13 +16,31 @@
           <td valign="top">
             <div class="title">A wild doggo appeared!!!</div>
             <div class="textbox-sm">
-              Fluffy the three-headed doggo is blocking the path. In order to
-              distract it and get to the next step, what should Goyle do?
-              Remember,
+              Fluffy the three-headed doggo is blocking the path. There are
+              three objects lying around: a flute covered in dog urine, a
+              delicious-looking fried chicken, and a Mike Tyson autographed
+              boxing gloves. In order to distract Fluffy and get to the next
+              step, what should Goyle do? Remember, it's something you need to
+              do to satisfy all three heads at once.
             </div>
             <div class="game-container">
               <div class="game-img-container">
                 <img src="images/fluffy.png" alt="" id="fluffy" />
+              </div>
+              <div class="btn-container-2">
+                <button
+                  class="fluffy-btn"
+                  id="fluffy-1"
+                  onclick="playAudio('assets/titanic_flute.mp3', 'home.html')"
+                >
+                  Play a lullaby with the urine-covered flute
+                </button>
+                <button class="fluffy-btn" id="fluffy-2">
+                  Eat the chicken and throw the bones
+                </button>
+                <button class="fluffy-btn" id="fluffy-3">
+                  Wear Tyson's gloves and bite Fluffy's ear
+                </button>
               </div>
             </div>
           </td>
@@ -31,7 +50,10 @@
             <div class="script-container">
               <img src="/images/goyle.png" alt="" id="goyle" />
               <div class="script-box">
-                <div class="script">I'm Goyle. Now help me, muggle.</div>
+                <div class="script">
+                  Blimey! I hate doggos! I hate this one three times more! Get
+                  rid of them muggle!
+                </div>
                 <div class="script-bg"></div>
               </div>
             </div>
