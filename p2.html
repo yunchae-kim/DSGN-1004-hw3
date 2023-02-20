@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <title>Goyle's Journey</title>
+  </head>
+  <body>
+    <div class="absolute-container">
+      <table id="main-container">
+        <tr>
+          <td valign="top">
+            <div class="title">Nature calls you</div>
+            <div class="textbox-sm">
+              Another trap! It looks like Devil's Snare. The snares start
+              trapping you hard and you begin to suffocate. How should we get
+              past it?
+            </div>
+            <div class="game-container">
+              <div class="game-img-container">
+                <img src="images/devilsnare.png" alt="" id="devilssnare" />
+              </div>
+              <div class="btn-container-2">
+                <button class="fluffy-btn" id="devil-1" onclick="playDevil1()">
+                  Fight the way through
+                </button>
+                <button class="fluffy-btn" id="devil-2" onclick="playDevil2()">
+                  Try to relax
+                </button>
+                <a href="p3.html" id="devil-next">
+                  <button class="fluffy-btn">Go to the next room</button>
+                </a>
+                <button class="fluffy-btn" id="devil-3" onclick="playDevil3()">
+                  Cast the spell Bluebell Flames
+                </button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td valign="bottom">
+            <div class="script-container">
+              <img src="/images/goyle.png" alt="" id="goyle" />
+              <div class="script-box">
+                <div id="script-devil" class="script">
+                  Yuck! What are these plants? I hate plants. My mum always
+                  wants me to eat them.
+                </div>
+                <div class="script-bg"></div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <audio src="/assets/devilssnare.mp3" autoplay class="bgm">
+      Your browser does not support the audio element.
+    </audio>
+    <img src="images/dungeon.png" alt="" id="dungeon" />
+  </body>
+</html>

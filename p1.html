@@ -28,17 +28,33 @@
                 <img src="images/fluffy.png" alt="" id="fluffy" />
               </div>
               <div class="btn-container-2">
+                <audio id="sound1" src="/assets/titanic_flute.mp3"></audio>
+                <audio id="sound1-1" src="/assets/snoring.mp3"></audio>
                 <button
                   class="fluffy-btn"
                   id="fluffy-1"
-                  onclick="playAudio('assets/titanic_flute.mp3', 'home.html')"
+                  onclick="playFluffy1()"
                 >
                   Play a lullaby with the urine-covered flute
                 </button>
-                <button class="fluffy-btn" id="fluffy-2">
+                <a href="p2.html" id="fluffy-next">
+                  <button class="fluffy-btn">Go to the next room</button>
+                </a>
+                <audio id="sound2" src="/assets/chew.mp3"></audio>
+                <audio id="sound2-1" src="/assets/dog_bark.mp3"></audio>
+                <button
+                  class="fluffy-btn"
+                  id="fluffy-2"
+                  onclick="playFluffy2()"
+                >
                   Eat the chicken and throw the bones
                 </button>
-                <button class="fluffy-btn" id="fluffy-3">
+                <audio id="sound3" src="/assets/tyson.mp3"></audio>
+                <button
+                  class="fluffy-btn"
+                  id="fluffy-3"
+                  onclick="playFluffy3()"
+                >
                   Wear Tyson's gloves and bite Fluffy's ear
                 </button>
               </div>
@@ -50,9 +66,9 @@
             <div class="script-container">
               <img src="/images/goyle.png" alt="" id="goyle" />
               <div class="script-box">
-                <div class="script">
+                <div id="script-fluffy" class="script">
                   Blimey! I hate doggos! I hate this one three times more! Get
-                  rid of them muggle!
+                  rid of it muggle!
                 </div>
                 <div class="script-bg"></div>
               </div>
@@ -61,7 +77,9 @@
         </tr>
       </table>
     </div>
-
+    <audio src="/assets/dog_bark.mp3" autoplay class="bgm">
+      Your browser does not support the audio element.
+    </audio>
     <img src="images/dungeon.png" alt="" id="dungeon" />
   </body>
 </html>

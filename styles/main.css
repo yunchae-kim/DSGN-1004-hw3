@@ -1,9 +1,16 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
 #goyle {
   max-width: 200px;
 }
 
 .script-container {
   display: flex;
+  box-sizing: border-box;
+  border: 2px #082b14 solid;
 }
 
 .script-box {
@@ -15,6 +22,7 @@
   z-index: 1;
   font-size: 20pt;
   padding: 1rem;
+  color: #aaaaaa;
 }
 
 .script-bg {
@@ -32,9 +40,18 @@
   z-index: -1;
 }
 
+#azkaban {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
 .title {
   font-size: 32pt;
   padding: 2rem;
+  padding-bottom: 0rem;
+  padding-top: 1rem;
   color: #aaaaaa;
 }
 
@@ -43,6 +60,7 @@
   font-size: 16pt;
   box-sizing: border-box;
   padding: 2rem;
+  padding-top: 1rem;
   color: #aaaaaa;
 }
 
@@ -60,6 +78,7 @@
 
 .game-img-container {
   max-width: 300px;
+  max-height: 300px;
 }
 
 #fluffy {
@@ -73,7 +92,7 @@
 
 .btn-container-1 {
   display: flex;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .btn-container-2 {
@@ -81,7 +100,7 @@
   width: 100vw;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 #enter-btn {
@@ -104,4 +123,91 @@
   font-size: 20pt;
   background-color: #1a472a;
   color: #aaaaaa;
+  cursor: pointer;
+}
+
+#fluffy-next {
+  display: none;
+  background-color: darkkhaki;
+}
+
+#devilssnare {
+  width: 100%;
+}
+
+#devil-next {
+  display: none;
+  background-color: darkkhaki;
+}
+
+#potions {
+  width: 100%;
+}
+
+#potion-next {
+  display: none;
+  background-color: darkkhaki;
+}
+
+#potion-grave {
+  display: none;
+  background-color: darkkhaki;
+}
+
+#potion-azkaban {
+  display: none;
+  background-color: darkkhaki;
+}
+
+#potion-forward {
+  display: none;
+  background-color: darkkhaki;
+}
+
+#potion-backward {
+  display: none;
+  background-color: darkkhaki;
+}
+
+.grave-btn {
+  /* display: none; */
+  box-sizing: border-box;
+  margin: 1rem;
+  width: 400px;
+  height: 100px;
+  border: 1px #aaaaaa solid;
+  font-size: 20pt;
+  background-color: #1a472a;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+
+.potion-btn {
+  box-sizing: border-box;
+  margin: 1rem;
+  width: 100px;
+  height: 100px;
+  border: 1px #aaaaaa solid;
+  font-size: 20pt;
+  background-color: #1a472a;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+
+.text-white {
+  color: white;
+}
+
+.bgm {
+  margin-top: 3rem;
+}
+
+#guys {
+  max-height: 300px;
+  margin: auto;
+}
+
+.guys-container {
+  display: flex;
+  justify-content: center;
 }

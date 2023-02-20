@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <title>Goyle's Journey</title>
+  </head>
+  <body>
+    <div class="absolute-container">
+      <table id="main-container">
+        <tr>
+          <td valign="top">
+            <div class="title">Potions, bunch of potions!</div>
+            <div class="textbox-sm">
+              You see a table with potions and a sheet of paper. It seems like a
+              riddle. The paper reads: Danger lies before you, while safety lies
+              behind, Two of us will help you, whichever you would find, One
+              among us seven will let you move ahead, Another will transport the
+              drinker back instead, Two among our number hold only nettle wine,
+              Three of us are killers, waiting hidden in line. Choose, unless
+              you wish to stay here for evermore, To help you in your choice, we
+              give you these clues four: First, however slyly the poison tries
+              to hide You will always find some on nettle wine’s left side;
+              Second, different are those who stand at either end, But if you
+              would move onwards, neither is your friend; Third, as you see
+              clearly, all are different size, Neither dwarf nor giant holds
+              death in their insides; Fourth, the second left and the second on
+              the right Are twins once you taste them, though different at first
+              sight.
+            </div>
+            <div class="game-container">
+              <div class="game-img-container">
+                <img src="images/potions.png" alt="" id="potions" />
+              </div>
+              <audio id="sound" src="/assets/gulp.mp3"></audio>
+              <div class="btn-container-2">
+                <a href="grave.html" id="potion-grave">
+                  <button class="grave-btn">
+                    You killed goyle. Go to the grave to mourn for him.
+                  </button>
+                </a>
+                <a href="azkaban.html" id="potion-azkaban">
+                  <button class="grave-btn">
+                    You let an underage drink. You are punished to Azkaban.
+                  </button>
+                </a>
+                <a href="end.html" id="potion-forward">
+                  <button class="grave-btn">
+                    You got the correct potion. You can now head forward.
+                  </button>
+                </a>
+                <a href="p1.html" id="potion-backward">
+                  <button class="grave-btn">
+                    You got the start-over potion. You are relocated to the
+                    front of the dungeon.
+                  </button>
+                </a>
+                <button
+                  class="potion-btn"
+                  id="potion-1"
+                  onclick="playPotion1()"
+                >
+                  1
+                </button>
+                <button
+                  class="potion-btn"
+                  id="potion-2"
+                  onclick="playPotion2()"
+                >
+                  2
+                </button>
+                <a href="p4.html" id="potion-next">
+                  <button class="potion-btn">Go to the next room</button>
+                </a>
+                <button
+                  class="potion-btn"
+                  id="potion-3"
+                  onclick="playPotion3()"
+                >
+                  3
+                </button>
+                <button
+                  class="potion-btn"
+                  id="potion-4"
+                  onclick="playPotion4()"
+                >
+                  4
+                </button>
+                <button
+                  class="potion-btn"
+                  id="potion-5"
+                  onclick="playPotion5()"
+                >
+                  5
+                </button>
+                <button
+                  class="potion-btn"
+                  id="potion-6"
+                  onclick="playPotion6()"
+                >
+                  6
+                </button>
+                <button
+                  class="potion-btn"
+                  id="potion-7"
+                  onclick="playPotion7()"
+                >
+                  7
+                </button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td valign="bottom">
+            <div class="script-container">
+              <img src="/images/goyle.png" alt="" id="goyle" />
+              <div class="script-box">
+                <div id="script-potion" class="script">
+                  You know I don't know how to read, right? Solve the riddle and
+                  choose the right potion, muggle.
+                </div>
+                <div class="script-bg"></div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <audio src="/assets/longbottom.mp3" autoplay class="bgm">
+      Your browser does not support the audio element.
+    </audio>
+    <img src="images/dungeon.png" alt="" id="dungeon" />
+  </body>
+</html>
