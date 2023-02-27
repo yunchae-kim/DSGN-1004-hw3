@@ -213,3 +213,20 @@ function potionShowNext() {
   document.querySelectorAll('potion-btn').style.display = 'none';
   document.getElementById('potion-grave').style.display = 'block';
 }
+
+// function reallySure(event) {
+//   var message = 'Are you sure about that?';
+//   action = confirm(message) ? true : event.preventDefault();
+// }
+
+// function actionToFunction(event) {
+//   switch (event.target.className.toLowerCase()) {
+//     case 'confirmation':
+//       reallySure(event);
+//       break;
+//     default:
+//       break;
+//   }
+// }
+
+// document.body.addEventListener('click', actionToFunction);
